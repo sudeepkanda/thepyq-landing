@@ -23,16 +23,20 @@
 <!-- Confetti Script CDN -->
 <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
+<!-- Confetti Script CDN -->
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
 <script>
-  // Confetti celebration after 5 seconds
-  setTimeout(() => {
+  // Run confetti every 3 seconds
+  setInterval(() => {
     confetti({
-      particleCount: 150,
+      particleCount: 80,
       spread: 70,
       origin: { y: 0.6 }
     });
-  }, 5000);
+  }, 3000);
 </script>
+
 
   <script>
     document.getElementById('subscribe-form').addEventListener('submit', async function (e) {
