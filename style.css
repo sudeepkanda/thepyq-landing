@@ -86,13 +86,14 @@
   }
 @keyframes fadeInOut {
   0% { opacity: 0; }
-  20% { opacity: 1; }
-  80% { opacity: 1; }
+  25% { opacity: 1; }
+  75% { opacity: 1; }
   100% { opacity: 0.05; }
 }
 
 body::before {
-  animation: fadeInOut 7s ease-in-out forwards;
+  animation: fadeInOut 3s ease-in-out infinite;
 }
+
 
   
