@@ -108,7 +108,7 @@
 }
 
 body::before {
-  content: "ThePYQ.com";
+  content: ThePYQ.com";
   position: absolute;
   top: 50%;
   left: 50%;
@@ -119,6 +119,7 @@ body::before {
   z-index: 0;
   animation: fadeInOut 3s ease-in-out infinite;
 }
+ }
 
 
   
