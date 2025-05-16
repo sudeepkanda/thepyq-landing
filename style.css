@@ -87,28 +87,32 @@
 @keyframes fadeInOut {
   0% {
     opacity: 0;
+    font-size: 100px;
     text-shadow: none;
   }
   25% {
     opacity: 1;
-    text-shadow: 0 0 15px rgba(255, 255, 255, 0.5),
-                 0 0 30px rgba(255, 255, 255, 0.3),
-                 0 0 45px rgba(255, 255, 255, 0.2);
+    font-size: 100vw;
+    text-shadow: 0 0 25px rgba(255, 255, 255, 0.7),
+                 0 0 60px rgba(255, 255, 255, 0.5),
+                 0 0 100px rgba(255, 255, 255, 0.3);
   }
   75% {
     opacity: 1;
-    text-shadow: 0 0 15px rgba(255, 255, 255, 0.5),
-                 0 0 30px rgba(255, 255, 255, 0.3),
-                 0 0 45px rgba(255, 255, 255, 0.2);
+    font-size: 100vw;
+    text-shadow: 0 0 25px rgba(255, 255, 255, 0.7),
+                 0 0 60px rgba(255, 255, 255, 0.5),
+                 0 0 100px rgba(255, 255, 255, 0.3);
   }
   100% {
     opacity: 0.05;
+    font-size: 100px;
     text-shadow: none;
   }
 }
 
 body::before {
-  content: "thepyq.com";
+  content: "ThePYQ.com";
   position: absolute;
   top: 50%;
   left: 50%;
@@ -119,6 +123,3 @@ body::before {
   z-index: 0;
   animation: fadeInOut 3s ease-in-out infinite;
 }
-
-
-  
