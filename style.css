@@ -85,13 +85,38 @@
     color: #ccc;
   }
 @keyframes fadeInOut {
-  0% { opacity: 0; }
-  25% { opacity: 1; }
-  75% { opacity: 1; }
-  100% { opacity: 0.05; }
+  0% {
+    opacity: 0;
+    text-shadow: none;
+  }
+  25% {
+    opacity: 1;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.5),
+                 0 0 30px rgba(255, 255, 255, 0.3),
+                 0 0 45px rgba(255, 255, 255, 0.2);
+  }
+  75% {
+    opacity: 1;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.5),
+                 0 0 30px rgba(255, 255, 255, 0.3),
+                 0 0 45px rgba(255, 255, 255, 0.2);
+  }
+  100% {
+    opacity: 0.05;
+    text-shadow: none;
+  }
 }
 
 body::before {
+  content: "thepyq.com";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 100px;
+  color: rgba(255, 255, 255, 0.1);
+  white-space: nowrap;
+  z-index: 0;
   animation: fadeInOut 3s ease-in-out infinite;
 }
 
