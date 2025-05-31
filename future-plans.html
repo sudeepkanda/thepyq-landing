@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future Plans - ThePYQ.com</title>
+    <meta name="description" content="Business pitch deck and future plans for ThePYQ.com">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #334155;
+            background-color: #ffffff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Styles */
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #2563eb;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #64748b;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: #2563eb;
+        }
+
+        /* Main Content */
+        .main-content {
+            padding: 120px 0 80px;
+        }
+
+        .page-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .page-header h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 3rem;
+            font-weight: 700;
+            color: #1e293b;
+            margin-bottom: 1rem;
+        }
+
+        .page-header p {
+            font-size: 1.2rem;
+            color: #64748b;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Pitch Deck Styles */
+        .pitch-slide {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            border: 1px solid #e2e8f0;
+        }
+
+        .pitch-slide h3 {
+            font-family: 'Poppins', sans-serif;
+            color: #2563eb;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 0.5rem;
+        }
+
+        .pitch-slide h4 {
+            font-family: 'Poppins', sans-serif;
+            color: #1e293b;
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin: 1.5rem 0 0.5rem;
+        }
+
+        .pitch-slide ul {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .pitch-slide li {
+            margin-bottom: 0.5rem;
+            color: #64748b;
+            line-height: 1.6;
+        }
+
+        .pitch-slide p {
+            color: #64748b;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .pitch-phases {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin: 1rem 0;
+        }
+
+        .phase-card {
+            background: #f8fafc;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #2563eb;
+        }
+
+        .contact-info {
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .contact-info h3 {
+            color: white !important;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .contact-info p {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.1rem;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #1e293b;
+            color: white;
+            padding: 3rem 0 2rem;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer h3 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: #2563eb;
+        }
+
+        .footer p, .footer a {
+            color: #94a3b8;
+            text-decoration: none;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .footer a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid #334155;
+            color: #94a3b8;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .page-header h1 {
+                font-size: 2.5rem;
+            }
+
+            .nav-links {
+                gap: 1rem;
+            }
+
+            .nav-links a {
+                font-size: 0.9rem;
+            }
+
+            .pitch-phases {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .main-content {
+                padding: 100px 0 60px;
+            }
+
+            .page-header h1 {
+                font-size: 2rem;
+            }
+
+            .container {
+                padding: 0 15px;
+            }
+
+            .nav {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="logo">ThePYQ.com</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#features">Features</a></li>
+                <li><a href="future-plans.html" class="active">Future Plans</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="#login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <div class="page-header">
+                <h1>Future Plans</h1>
+                <p>Business pitch deck and roadmap for ThePYQ.com - India's most trusted PYQ platform</p>
+            </div>
+            
+            <div class="pitch-slide">
+                <h3>🚀 thepyq.com - Revolutionizing Exam Preparation</h3>
+                <p><strong>India's Most Trusted PYQ Platform for Competitive Exams</strong></p>
+                <p><strong>Founder:</strong> Sudeep</p>
+            </div>
+
+            <div class="pitch-slide">
+                <h3>❌ Problem</h3>
+                <ul>
+                    <li>Competitive exam aspirants lack structured, accessible platforms to practice PYQs</li>
+                    <li>Many PYQ websites are outdated, lack explanations, or are behind paywalls</li>
+                    <li>Educational institutions struggle to provide cost-effective digital solutions for students</li>
+                </ul>
+            </div>
+
+            <div class="pitch-slide">
+                <h3>✅ Solution</h3>
+                <ul>
+                    <li>A clean, fast, and user-friendly platform offering 100% free PYQs with answers and explanations</li>
+                    <li>Students can practice, revise, and evaluate—all in one place</li>
+                    <li>Future AI integration to help users ask questions at the point of doubt</li>
+                </ul>
+            </div>
+
+            <div class="pitch-slide">
+                <h3>📱 Product Overview</h3>
+                <ul>
+                    <li>Free access to PYQs across competitive exams</li>
+                    <li>Clear, concise answers with explanations</li>
+                    <li>Practice mode for question solving</li>
+                    <li><strong>Coming soon:</strong> AI-powered Q&A + Institutional access</li>
+                </ul>
+            </div>
+
+            <div class="pitch-slide">
+                <h3>📊 Market Opportunity</h3>
+                <ul>
+                    <li>Over 10 million aspirants appear for UPSC, APPSC, and other exams yearly</li>
+                    <li>200K+ coaching centers and colleges in India</li>
+                    <li>Indian EdTech market projected to hit $10B+ by 2025</li>
+                </ul>
+            </div>
+
+            <div class="pitch-slide">
+                <h3>💰 Business Model</h3>
+                <div class="pitch-phases">
+                    <div class="phase-card">
+                        <h4>Phase 1</h4>
+                        <p>Free PYQs + Ad Revenue (Google AdSense, Ezoic)</p>
+                    </div>
+                    <div class="phase-card">
+                        <h4>Phase 2 (Post-Traction)</h4>
+                        <p><strong>AI Assistant</strong> trained on exam syllabus (Freemium Model)</p>
+                        <ul>
+                            <li>Basic: Limited AI credits</li>
+                            <li>Premium: Unlimited credits</li>
+                        </ul>
+                    </div>
+                    <div class="phase-card">
+                        <h4>Phase 3</h4>
+                        <p><strong>Institutional Licensing</strong></p>
+                        <ul>
+                            <li>₹50–₹100/student/year for full access</li>
+                            <li>Server-side integration for custom dashboards or apps</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pitch-slide">
+                <h3>📈 Traction</h3>
+                <ul>
+                    <li>Website live with rapidly growing user base</li>
+                    <li>Dozens of exam categories and curated questions</li>
+                    <li>Positive user feedback and organic reach through SEO and Telegram groups</li>
+                </ul>
+            </div>
+
+            <div class="pitch-slide">
+                <h3>🏆 Competitive Advantage</h3>
+                <ul>
+                    <li>100% free content with superior UI/UX</li>
+                    <li>Future-ready AI doubt-clearing system</li>
+                    <li>Designed to scale both in B2C and B2B</li>
+                    <li>Flexible API for institutional embedding</li>
+                </ul>
+            </div>
+
+            <div class="pitch-slide">
+                <h3>🎯 Go-To-Market Strategy</h3>
+                <ul>
+                    <li>SEO-first growth through keyword-rich question pages</li>
+                    <li>Leverage Telegram, WhatsApp, YouTube for community-driven growth</li>
+                    <li>Reach out to institutions for pilot partnerships</li>
+                </ul>
+            </div>
+
+            <div class="pitch-slide">
+                <h3>👥 Team</h3>
+                <p><strong>Sudeep – Founder</strong><br>
+                Backend developer, UPSC aspirant, builder of scalable educational tools</p>
+                
+                <h4>Upcoming Roles:</h4>
+                <ul>
+                    <li>AI/ML Developer</li>
+                    <li>Frontend Developer</li>
+                    <li>B2B Sales Lead</li>
+                </ul>
+            </div>
+
+            <div class="pitch-slide">
+                <h3>💵 Ask (Post-Phase 1)</h3>
+                <p>Will seek <strong>₹10–15 Lakhs in seed funding</strong> after Phase 1 completion, to:</p>
+                <ul>
+                    <li>Train/fine-tune an AI model for exam-relevant Q&A</li>
+                    <li>Expand engineering team</li>
+                    <li>Scale infrastructure and B2B integrations</li>
+                </ul>
+            </div>
+
+            <div class="pitch-slide">
+                <h3>🔮 Vision</h3>
+                <p><strong>To build India's largest free-first educational platform—where every aspirant can learn from the past and master the future.</strong></p>
+            </div>
+
+            <div class="contact-info">
+                <h3>📞 Contact</h3>
+                <p>📧 sudeepkanda@gmail.com</p>
+                <p>🌐 www.thepyq.com</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <h3>ThePYQ.com</h3>
+                    <p>Your ultimate destination for AI-powered exam preparation using previous year questions.</p>
+                </div>
+                <div>
+                    <h3>Contact Info</h3>
+                    <p>Email: sudeepkanda@gmail.com</p>
+                    <p>Phone: +91 70131 91259</p>
+                   
+                </div>
+                <div>
+                    <h3>Quick Links</h3>
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Support</a>
+                    <a href="#">FAQ</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ThePYQ.com. All rights reserved. Empowering aspirants with intelligent exam preparation.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
